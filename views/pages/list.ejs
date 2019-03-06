@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<% include ../partials/header %>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+<body>
+
+
+	<div class="container" id="list">
+		<!-- <img id="image2" src="/puic/ct.jpg"> -->
+		<table class="col-md-6 col-md-offset-3 table table-striped">
+			
+				<h3 style="color:red; margin-left:30px;"> <a class="btn btn-secondary" href="/register"><i class="fa fa-plus">Create New</i></a> Student list</h3>
+					<thead>
+						<tr>
+							<th>Fullname</th>
+							<th>Level</th>
+							<th>Gender</th>
+							<th>DOB</th>
+							<th>Matric_no</th>
+							<th>Email</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+				
+					<tbody class="">
+						<% for(var i = 0;  i < list.length; i++) { %>
+						<tr>
+							<td><%= list[i].name %></td>
+							
+							<td><%= list[i].level %></td>
+							
+							<td><%= list[i].gender %></td>
+							
+							<td><%= list[i].dob %></td>
+
+							<td><%= list[i].matric_no %></td>
+							
+							<td><%= list[i].email %></td>
+
+							<td>
+								<a href=/<%= list[i]._id %>><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+
+								<a onclick="return confirm('Are you sure you want to delete this Student?');" href=/pages/delete/<%= list[i]._id %>
+								 ><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+									
+						<% } %>
+					</tbody>
+			</table>
+				
+		</table>
+		
+	</div>
+	
+
+	<% include ../partials/scripts %>
+
+	<% include ../partials/footer %>
+
+</body>
+</html> 

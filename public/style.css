@@ -1,0 +1,109 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+	margin-top: 60px;
+	text-decoration: none;
+}
+
+#about{
+	padding-top: 60px;
+}
+
+#contact{
+	padding-top: 60px;
+}
+
+.me{
+	margin-top: 5px;
+	background-color: #999999; 
+	
+}
+
+#list{
+	min-height: 1200px;
+}
+
+
+.footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 25px;
+	background-color: #507cd8;
+	/*margin-bottom: 20px;*/
+}
+
+.footer p{
+	line-height: 25px;
+	color: white;
+}
+
+.footer a{
+	color: #efb22e;
+	text-decoration: none;
+}
+
+
+.content{
+	margin-top: 40px;
+}
+
+#here{
+	margin-left: 30px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+
+ /*contacts*/
+
+
+ #image{
+ 	height: 590px;
+ 	width: 900px;
+ 	opacity: 0.7;
+ 	position: absolute;
+ 	margin-left: 120px;
+}
+
+#image2{
+	height: auto;
+ 	width: 1000px;
+ 	/*opacity: 0.7;*/
+ 	position: absolute;
+}
+
+#over{
+	position: relative;
+	margin-left: 120px;
+	padding: 60px;
+	/*line-height: 50px;*/
+
+}
+
+/*.table{
+	font-size: 12px;
+	color: white;
+}*/
+
+/*.input{
+	position: 5
+	width: 100%;
+	height: 60px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	border-bottom: 2px solid #3399ff; 
+	color: #fff;
+}*/
+
+
+
+
+
+
+
