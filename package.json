@@ -1,12 +1,18 @@
 {
   "name": "registration2",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple registration page",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
-  "author": "",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "AYODEJI",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -19,13 +25,7 @@
     "mongoose": "^5.4.17",
     "morgan": "^1.9.1"
   },
-
   "engines": {
     "node": "8.12.0"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ]
+  }
 }
